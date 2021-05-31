@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formulario Uno</title>
+    <meta charset="utf-8">
+    <meta name="Formulario" content="Academico">
+    <link href="micss.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Practica con formulario</h1>
+    </header>
+    <hr size="3">
+    <form name="formPrueba" action="registro.php" method="get" autocomplete="of">
+
+        <label>Nombre:</label>
+        <input type="text" size="40">
+        <br>
+        <label> Detalles</label>
+        <br>
+        
+        <textarea name="textArea" cols="35" rows="10" placeholder="Escriba aqui" autofocus>
+
+        </textarea>
+        <br>
+        
+        <input name="textClave" 
+               type="password" 
+               maxlength="10" 
+               size="10" >
+        <label> Numero de Celular</label>
+        
+        <input 
+               type="tel" 
+               size="30" 
+               name="textelf">
+          <label> Correo</label>
+        
+        <input 
+               type="email" 
+               size="60" 
+               name="textmail">
+           <label> Colores</label>
+        
+        <input 
+               type="color" 
+               size="30" 
+               name="textColor" value="blue">
+        
+            <label> Fecha de Nacimiento</label>
+        <input 
+               type="datetime-local" 
+               name="textFecha" >
+  <label> Ingresa Numeros</label>
+        
+        <input 
+               type="number" 
+               name="textNumero" min="30" max="100" >
+  <label> URL</label>
+        
+        <input 
+               type="url" 
+               name="texUrl" >
+        <br>
+        <label> Rango de numeros</label>
+        
+        <input 
+               type="range" 
+               name="texRango" min="10" max="50" > 
+    </form>
+    <hr size="4">
+    <h3>Botones y mas..</h3>
+    <hr size="3">
+    
+    
+    <form method="get" action="registro.php" >
+        <input type="button" 
+         value="Ir a google." 
+        onclick="ira();">
+    </form>
+    
+    <script> <!--Codigo JavaScript-->
+    function ira(){
+        document.location='http://www.google.com.co';
+    }
+    </script>
+    <hr>
+    <h4>Salida output</h4>
+    <hr>
+    <h6>Calculo</h6>
+    
+    <form  oninput="resp.value= parseint(op1.value)*parseint(op2.value)">
+        <input name="op1" type="number">
+        <input name="op2" type="number">
+        <output name="resp" for="op1 op2">4</output>
+    </form>
+<hr size="3">
+    <h3> cuadro de Chequeo</h3>
+    <hr size="3">
+    
+    <label> 
+     <input type="checkbox" name="checkbox1" >   
+    Mensaje
+    </label>
+    <label> 
+     <input type="checkbox" name="checkbox1" >   
+    mas
+    </label>
+    <hr>
+    <h3>Radio</h3> <hr>
+    
+    <label>Estado Civil</label><br>
+        <label> <input type="radio" name="btnestado" value="
+            s" checked="checked">  Soltero</label>
+        <label> <input type="radio" name="btnestado" value="
+            c" >  Casado</label>
+        <label> <input type="radio" name="btnestado" value="
+            d" >  Divorsiado</label>
+    <hr>
+    <h3>Cuadro combiando</h3>
+    <hr>
+    <br>
+    <select name="Cadro1">
+    <option value="valor1" selected> opcion 1</option>
+    <option value="valor2" > opcion 2</option>
+        <option value="valor3" > opcion 3</option>
+        <option value="valor4" > opcion 4</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <hr> <h3>Cuadro de lista</h3> <br>
+    <hr>
+    <label>Ciudad</label> <br>
+     <select name="Cadro1" size="4">
+        <option value="valor1" selected> Muzo</option>
+        <option value="valor2" > Medellin</option>
+        <option value="valor3" > Bogota</option>
+        <option value="valor4" > Barranquilla</option>
+    </select>
+    <br>
+    <br>
+    <hr> <h3>DataList</h3> <br>
+    <hr>
+    
+    <input type="text" name="textMarca" list="marcas">
+    <datalist id="marcas">
+        <option value="Samsung"></option>
+         <option value="Hueawei"></option>
+         <option value="Apple"></option>
+    </datalist>
+    <br>
+    <br>
+    <hr> <h3>Sistema de Archivo</h3> <br>
+    <hr>
+    
+    <input type="file" 
+           multiple
+    />
+    hr> <h3>oculto.</h3> <br>
+    <hr>
+    <input type="hidden" 
+           name="textOculto" 
+           value="16986848">
+    
+</body></html>
