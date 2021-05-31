@@ -1,0 +1,10 @@
+
+git config --global user.email "cortesmariacamila788@gmail.com"
+
+git config --global user.name "mariCortez"
+
+
+GITHUB
+correo: cortesmariacamila788@gmail.com
+USUAIRO: mcamilacoetes
+cLAVE: mariacortes123***
